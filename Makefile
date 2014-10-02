@@ -1,21 +1,29 @@
 #
-#
 FLAGS_OPTS=-Wall -lm
 
 #
-SRC=methods.c
+FILES_NAMES=set_variables
 
 #
-OBJECTS=objs/main.o
+SRC_DIR=src
 
 #
-all: objs/main.o
+SRC=$(addsuffix .c,main $(addprefix $(SRC_DIR)/,$(FILES_NAMES)))
+
+#
+OBJECTS=$(SRC:.c=.o)
+
+#
+OBJ_DIR=objs
+
+#
+all: $(OBJECTS)
 	gcc $(OBJECTS) $(FLAGS_OPTS) -o methods
 
 #
-objs/main.o: main.c
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 	gcc $(FLAGS_OPTS) -c $< -o $@
-
+	
 #
 clean:
 	rm -rf $(OBJECTS)

@@ -17,13 +17,13 @@
 #include "lib/methods.h"
 
 
-int main(int argc, const char *argv[])
+int main()
 {
 	printf("\nBienvenido!!\n Este programa te ayudara a saber que metodo es la"); 
 	printf("opcion mas efectiva para resolver tu ecuacion, dispondremos del metodo"); 
 	printf("de Biseccion, del metodo de Falsa posicion, del de Newton-Rapson y ");
 	printf("del metodo de la Secante.\n Empezaremos con los datos con el supuesto"); 
 	printf("de que tu ecuacion es de la forma cuadratica F(x)= Ax^2 + Bx + C ...");
-	
+
     return 0;
 }
