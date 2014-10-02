@@ -2,7 +2,7 @@
 FLAGS_OPTS=-Wall -lm
 
 #
-FILES_NAMES=set_variables
+FILES_NAMES=set_variables errors
 
 #
 SRC_DIR=src

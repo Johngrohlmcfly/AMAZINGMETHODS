@@ -20,8 +20,12 @@
 
 void set_init_variables(){
 	printf("\n\nIntroduce los datos para el intervalo [X,Y] respectivamente, separados por un espacio:\n");
-	scanf("%lf %lf",&inter_X,&inter_Y);
-
+	if(scanf("%lf %lf",&inter_X,&inter_Y)!=2){
+		exit_with_error(1);
+	}
+	
 	printf("\n\nAhora, deberas introducir el valor del ERROR:\n");
-	scanf("%lf",&ERROR_VAL);
+	if(scanf("%lf",&ERROR_VAL)!=1){
+		exit_with_error(1);
+	}
 }

@@ -25,5 +25,7 @@ int main()
 	printf("del metodo de la Secante.\n Empezaremos con los datos con el supuesto"); 
 	printf("de que tu ecuacion es de la forma cuadratica F(x)= Ax^2 + Bx + C ...");
 
+	set_init_variables();
+
     return 0;
 }
