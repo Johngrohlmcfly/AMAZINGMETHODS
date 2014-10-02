@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /**
  * Author: John & Sier <johnhndzr@gmail.com -- sierisimo@gmail.com>
  *
