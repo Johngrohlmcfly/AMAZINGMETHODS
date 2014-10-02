@@ -27,3 +27,10 @@
 *.i*86
 *.x86_64
 *.hex
+
+#The executable of this project
+methods
+
+#Object dir
+objs
+objs/*
