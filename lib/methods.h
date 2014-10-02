@@ -13,9 +13,9 @@
  * Functions:
  *
  */
-#include<stdio.h>
-#include<math.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
 
 //main elements of a second grade ecuation
 //coef stands for coeficiente
@@ -23,4 +23,9 @@ double coef_A;
 double coef_B;
 double coef_C;
 
-void set_coeficients();
+double inter_X;
+double inter_Y;
+
+double ERROR_VAL;
+
+void set_init_variables();
