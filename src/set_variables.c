@@ -1,26 +1,28 @@
 /**
  * Author: John & Sier <johnhndzr@gmail.com -- sierisimo@gmail.com>
  *
- * Date:2/10/2014 
+ * Date:2/10/2014
  * LastUpdate:2/10/2014
  * version: 0.0.1~alpha1
  *
  * Name: set_variables.c
  *
- * Description: 
+ * Description:
  * 		This file is in charge of setting the content of certain files
- *	
+ *
  * Functions:
  * 		set_coeficients
  *
  */
-#include "../lib/methods.h"
+#include "../lib/libraries.h"
+#include "../lib/globals.h"
+#include "../lib/functions.h"
 
 /**	set_init_variables
  * 		type: void
  *		returns: nothing
  *		description: Just get values for certainr variables
- * 
+ *
  *  author:
  *  LastUpdate:
  */
@@ -30,7 +32,7 @@ void set_init_variables(){
 	if(scanf("%lf %lf",&inter_X,&inter_Y)!=2){
 		exit_with_error(1);
 	}
-	
+
 	printf("\n\nAhora, deberas introducir el valor del ERROR:\n");
 	//
 	if(scanf("%lf",&ERROR_VAL)!=1){
