@@ -6,14 +6,14 @@ FLAGS_OPTS=-Wall -lm
 SRC=methods.c
 
 #
-OBJECTS=objs/methods.o
+OBJECTS=objs/main.o
 
 #
-all: objs/methods.o
+all: objs/main.o
 	gcc $(OBJECTS) $(FLAGS_OPTS) -o methods
 
 #
-objs/methods.o: methods.c
+objs/main.o: main.c
 	gcc $(FLAGS_OPTS) -c $< -o $@
 
 #
