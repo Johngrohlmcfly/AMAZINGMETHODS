@@ -1,20 +1,20 @@
 #
-FLAGS_OPTS=-Wall -lm
+FLAGS_OPTS=-Wall #-lm
 
 #
-FILES_NAMES=set_variables errors
+FILES_NAMES=main set_variables errors
 
 #
 SRC_DIR=src
 
 #
-SRC=$(addsuffix .c,main $(addprefix $(SRC_DIR)/,$(FILES_NAMES)))
-
-#
-OBJECTS=$(SRC:.c=.o)
+SRC=$(addsuffix .c,$(addprefix $(SRC_DIR)/,$(FILES_NAMES)))
 
 #
 OBJ_DIR=objs
+
+#
+OBJECTS=$(addsuffix .o,$(addprefix $(OBJ_DIR)/,$(FILES_NAMES)))
 
 #
 all: $(OBJECTS)
@@ -23,7 +23,7 @@ all: $(OBJECTS)
 #
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 	gcc $(FLAGS_OPTS) -c $< -o $@
-	
+
 #
 clean:
 	rm -rf $(OBJECTS)

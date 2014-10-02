@@ -32,5 +32,4 @@
 methods
 
 #Object dir
-objs
 objs/*
