@@ -23,12 +23,7 @@ all: $(OBJECTS)
 #
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 	gcc $(FLAGS_OPTS) -c $< -o $@
-
-
-#
-#.o: 
-#	gcc $(FLAGS_OPTS) -c $< -o $@
-
+	
 #
 clean:
 	rm -rf $(OBJECTS)
