@@ -21,7 +21,7 @@
 double second_grade_polinom(double);
 
 //Bisection method, F(X)
-double bisection_cuadratic(double lower, double upper){
+double bisection(double lower, double upper, double (*f)(double)){
   double fx = second_grade_polinom(lower);
   double fy = second_grade_polinom(upper);
 

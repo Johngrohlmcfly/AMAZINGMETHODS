@@ -7,5 +7,5 @@ void exit_with_error(int);
 void error_at_calculus(int);
 
 //math_methods.c
-double bisection_cuadratic(double, double);
+double bisection(double, double, double (*)(double));
 double second_grade_polinom(double);

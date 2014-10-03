@@ -30,7 +30,7 @@ int main()
 	set_init_variables();
 	set_equation();
 
-	printf("%lf",bisection_cuadratic(inter_X,inter_Y));
+	printf("%lf",bisection(inter_X,inter_Y,second_grade_polinom));
 
 	return 0;
 }
