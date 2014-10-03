@@ -17,3 +17,10 @@
 #include "../lib/libraries.h"
 #include "../lib/globals.h"
 
+ //Bisection method, F(X)
+ double function_fx(){
+ 	FunctionFx= ((coef_A*(inter_X*inter_X))+(coef_B*inter_X)+coef_C);
+ 	return FunctionFx;
+ }
+
+

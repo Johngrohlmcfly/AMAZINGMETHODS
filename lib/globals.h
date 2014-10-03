@@ -10,3 +10,7 @@ double inter_Y;
 
 //this is pretty obvious
 double ERROR_VAL;
+
+//Variables for functions F(x)
+double FunctionFx;
+double FunctionFy;

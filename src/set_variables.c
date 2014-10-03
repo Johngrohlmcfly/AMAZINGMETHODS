@@ -45,5 +45,11 @@ void set_init_variables(){
  *
  */
 void set_equation(){
-
+	printf("\nIntroduce los valores para los coeficientes de cada termino:\nDado ");
+	printf("que probaremos un trinomio cuadrado perfecto, introduce respectivamente");
+	printf(" valores para (F(x)=ax^2+bx+c) separados por un espacio\n");
+	//
+	if(scanf("%lf %lf %lf", &coef_A,&coef_B,&coef_C)!=3){
+		exit_with_error(1);
+	}
 }
