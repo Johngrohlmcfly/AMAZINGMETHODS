@@ -8,10 +8,10 @@
  * Name: set_variables.c
  *
  * Description:
- * 		
+ *
  *
  * Functions:
- * 
+ *
  */
 #include "../lib/libraries.h"
 
@@ -22,4 +22,12 @@ void exit_with_error(int error_code){
 			break;
 	}
 	exit(EXIT_FAILURE);
+}
+
+void error_at_calculus(int error_code){
+	switch(error_code){
+		case 1:
+			printf("El metodo no puede encontrar una solucion adecuada para su problema");
+			break;
+	}
 }

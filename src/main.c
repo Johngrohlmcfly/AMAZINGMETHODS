@@ -16,6 +16,7 @@
 
 #include "../lib/libraries.h"
 #include "../lib/functions.h"
+#include "../lib/globals.h"
 
 
 int main()
@@ -27,8 +28,9 @@ int main()
 	printf(" de que tu ecuacion es de la forma trinomio cuadrado perfecto F(x)= Ax^2 + Bx + C ...");
 
 	set_init_variables();
-	set_equation(); 
-	printf("F(x)=%lf",function_fx());
+	set_equation();
+
+	printf("%lf",bisection_cuadratic(inter_X,inter_Y));
 
 	return 0;
 }
