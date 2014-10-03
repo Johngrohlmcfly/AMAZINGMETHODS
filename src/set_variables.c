@@ -12,6 +12,7 @@
  *
  * Functions:
  * 		set_coeficients
+ *		set_equation
  *
  */
 #include "../lib/libraries.h"
@@ -38,4 +39,11 @@ void set_init_variables(){
 	if(scanf("%lf",&ERROR_VAL)!=1){
 		exit_with_error(1);
 	}
+}
+
+/**
+ *
+ */
+void set_equation(){
+
 }

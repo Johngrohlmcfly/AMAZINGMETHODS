@@ -2,7 +2,7 @@
 FLAGS_OPTS=-Wall #-lm
 
 #
-FILES_NAMES=main set_variables errors
+FILES_NAMES=main set_variables errors math_methods
 
 #
 SRC_DIR=src
