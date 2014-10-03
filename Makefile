@@ -2,7 +2,7 @@
 FLAGS_OPTS=-Wall #-lm
 
 #
-FILES_NAMES=main set_variables errors math_methods
+FILES_NAMES=main set_variables errors math_functions math_methods
 
 #
 SRC_DIR=src
@@ -27,4 +27,3 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 #
 clean:
 	rm -rf $(OBJECTS)
-	

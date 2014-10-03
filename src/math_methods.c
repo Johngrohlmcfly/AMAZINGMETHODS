@@ -22,8 +22,8 @@ double second_grade_polinom(double);
 
 //Bisection method, F(X)
 double bisection(double lower, double upper, double (*f)(double)){
-  double fx = second_grade_polinom(lower);
-  double fy = second_grade_polinom(upper);
+  double fx = (*f)(lower);
+  double fy = (*f)(upper);
 
   double middle;
   double f_middle=1;
@@ -35,10 +35,10 @@ double bisection(double lower, double upper, double (*f)(double)){
   }else{
     while(f_middle >= ERROR_VAL){
       middle = (upper+lower)/2.0;
-      f_middle = second_grade_polinom(middle);
+      f_middle = (*f)(middle);
 
-      fx = second_grade_polinom(lower);
-      fy = second_grade_polinom(upper);
+      fx = (*f)(lower);
+      fy = (*f)(upper);
 
       printf("middle: %lf %lf %lf\n",middle,lower,upper);
 
@@ -50,9 +50,4 @@ double bisection(double lower, double upper, double (*f)(double)){
     }
     return middle;
   }
-}
-
-//Just evaluate a polinom based on a variable
-double second_grade_polinom(double variable){
-  return ((coef_A*(variable*variable))+(coef_B*variable)+coef_C);
 }

@@ -8,4 +8,6 @@ void error_at_calculus(int);
 
 //math_methods.c
 double bisection(double, double, double (*)(double));
+
+//math_functions.c
 double second_grade_polinom(double);
